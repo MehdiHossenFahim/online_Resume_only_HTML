@@ -1,179 +1,385 @@
-<!-- Project Specifications
-Create an HTML file named index.html.
-
-Use the <!DOCTYPE html> declaration at the beginning of the file to indicate that it's an HTML document.
-
-Create a head section that includes a title element with the text "My Resume".
-
-Inside the body section, write HTML code to create an online resume covering the following aspects:
-
-Summary or objective statement
-
-Education (list degrees, schools, and dates)
-
-Work experience (list job titles, employers, dates, and responsibilities)
-
-Skills (list relevant skills or areas of expertise)
-
-Awards, certifications, or other achievements (list any relevant awards, certifications, or other accomplishments)
-
-Use appropriate HTML tags to format the content of each section, such as h1 for section headings and ul or ol for lists.
-
-Use HTML tags to add a profile photo of yourself.
-
-Use relevant anchor tags to create a multi-page website, listing other aspects of your resume such as Hobbies and Contact details.
-
-Add a footer element with your name and any copyright information or other disclaimers. (Hint: use the MDN docs for things you don't know how to do: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
-
-Save the index.html file and open it in a web browser to ensure that it displays correctly.
-
-Add your website to your GitHub to start building your portfolio.
-
-Publish your website using GitHub pages and share it here (in the Q&A) with other students.
-
-Comment and make suggestions to other students' projects. -->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mehedi Hossen Fahim - Resume</title>
-    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <title>Mehedi Hossen Fahim — Resume</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <img
-      src="./assets/images/FahimPP.jpg"
-      alt="headshot of mehedi hossen fahim"
-      width="150"
-    />
 
-    <h1>Mehedi Hossen Fahim</h1>
+    <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+    <header>
+      <div class="header-inner">
+        <img
+          src="./assets/images/FahimPP.jpg"
+          alt="Headshot of Mehedi Hossen Fahim"
+          class="avatar"
+        />
+        <div class="header-text">
+          <h1>Mehedi Hossen Fahim</h1>
+          <p class="tagline">Software Developer · Backend &amp; IoT</p>
+          <p class="location">📍 Dhaka, Bangladesh</p>
 
-    <section id="contact">
-      <address>
+          <address>
+            <a href="mailto:mehdihossenfahim@gmail.com">
+              <img src="assets/images/telephone-symbol-button.png" alt="email" />
+              mehdihossenfahim@gmail.com
+            </a>
+            <a href="tel:+8801567892416">
+              <img src="assets/images/telephone-symbol-button.png" alt="phone" />
+              +880 1567-892416
+            </a>
+            <a href="https://mehdihossenfahim.github.io/portfolio" target="_blank" rel="noopener">
+              <img src="assets/images/github.png" alt="portfolio" />
+              Portfolio
+            </a>
+            <a href="https://github.com/MehdiHossenFahim" target="_blank" rel="noopener">
+              <img src="assets/images/github.png" alt="github" />
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mehedihossen-fahim" target="_blank" rel="noopener">
+              <img src="assets/images/linkedin.png" alt="linkedin" />
+              LinkedIn
+            </a>
+          </address>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- ═══ ABOUT ════════════════════════════════════════════ -->
+      <section id="about">
+        <h2>Professional Summary</h2>
         <p>
-          <img src="assets/images/telephone-symbol-button.png" width="20" />
-          +880 1567892416
+          Results-driven Software Developer with demonstrated success building
+          reliable backend systems, optimizing database performance, and
+          delivering production-ready features across ASP.NET, FastAPI, and
+          PostgreSQL. Recognized for reducing system latency, improving
+          application responsiveness, and contributing to scalable architectures.
+          Strong foundation in algorithms, API development, and clean,
+          maintainable code with proven impact across 10+ deployed software and
+          IoT solutions.
         </p>
-        <p>
-          <a href="https://github.com/MehdiHossenFahim">
-            <img src="assets/images/github.png" width="20" />
-            GitHub-mehdihossenfahim
-          </a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/mehedi-hossen-fahim/">
-            <img src="assets/images/linkedin.png" width="20" />
-            LinkedIn-mehedihossenfahim
-          </a>
-        </p>
-      </address>
-    </section>
-    <nav>
-      <a href="#about">About</a> | <a href="#skills">Skills</a> |
-      <a href="#experience">Experience</a> | <a href="#projects">Projects</a> |
-      <a href="#education">Education</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+      </section>
 
-    <hr />
-    <section id="about">
-      <h2>Professional Summary</h2>
-      <p>
-        Results-driven Software Developer with demonstrated success building
-        reliable backend systems, optimizing database performance, and
-        delivering production-ready features across ASP.NET, FastAPI, and
-        PostgreSQL. Recognized for reducing system latency, improving
-        application responsiveness, and contributing to scalable architectures.
-        Strong foundation in algorithms, API development, and clean,
-        maintainable code with proven impact across 10+ deployed software and
-        IoT solutions.
-      </p>
-    </section>
+      <!-- ═══ SKILLS ═══════════════════════════════════════════ -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
 
-    <hr />
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>
-          Programming Languages:
-          <ul>
-            <li>
-              <label for="python">Python</label>
-              <progress max="100" value="95" id="python">95%</progress
-              ><span> 95%</span>
-            </li>
-            <li>
-              <label for="C#">C#</label>
-              <progress max="100" value="90" id="C#">90%</progress
-              ><span> 90%</span>
-            </li>
-            <li>
-              <label for="java">Java</label>
-              <progress max="100" value="95" id="java">95%</progress
-              ><span> 95%</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Database:
-          <ul>
-            <li>
-              <label for="postgre">PostGRE SQL</label>
-              <progress max="100" value="90" id="postgre">90%</progress
-              ><span> 90%</span>
-            </li>
-            <li>
-              <label for="mysql">MySQL</label>
-              <progress max="100" value="90" id="mysql">90%</progress
-              ><span> 90%</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+        <div class="skills-grid">
 
-    <hr />
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <h3>White Services Technology Ltd.</h3>
-          <ul>
-            <li>Software Developer Intern</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <ul class="skill-bars">
+              <li>
+                <label for="sk-python">Python</label>
+                <progress max="100" value="95" id="sk-python"></progress>
+                <span>95%</span>
+              </li>
+              <li>
+                <label for="sk-csharp">C#</label>
+                <progress max="100" value="90" id="sk-csharp"></progress>
+                <span>90%</span>
+              </li>
+              <li>
+                <label for="sk-java">Java</label>
+                <progress max="100" value="85" id="sk-java"></progress>
+                <span>85%</span>
+              </li>
+              <li>
+                <label for="sk-cpp">C++</label>
+                <progress max="100" value="80" id="sk-cpp"></progress>
+                <span>80%</span>
+              </li>
+              <li>
+                <label for="sk-c">C</label>
+                <progress max="100" value="75" id="sk-c"></progress>
+                <span>75%</span>
+              </li>
+            </ul>
+          </div>
 
-    <hr />
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>EDUBUDDY AI-ENHANCED LEARNING PLATFORM</li>
-        <li>IOT-BASED HEALTH MONITORING SYSTEM</li>
-        <li>PDF SUMMARIZER</li>
-        <li>6-DOF ROBOTIC ARM</li>
-      </ul>
-    </section>
+          <div class="skill-group">
+            <h4>Backend &amp; Web</h4>
+            <ul class="tag-list">
+              <li>ASP.NET Core</li>
+              <li>FastAPI</li>
+              <li>REST APIs</li>
+              <li>MVC</li>
+              <li>Entity Framework</li>
+            </ul>
+          </div>
 
-    <hr />
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          BSc in Computer Science and Engineering – Notre Dame University
-          Bangladesh (2026)
-        </li>
-      </ul>
-    </section>
+          <div class="skill-group">
+            <h4>Databases</h4>
+            <ul class="skill-bars">
+              <li>
+                <label for="sk-pg">PostgreSQL</label>
+                <progress max="100" value="90" id="sk-pg"></progress>
+                <span>90%</span>
+              </li>
+              <li>
+                <label for="sk-mysql">MySQL</label>
+                <progress max="100" value="90" id="sk-mysql"></progress>
+                <span>90%</span>
+              </li>
+            </ul>
+            <ul class="tag-list" style="margin-top:.6rem">
+              <li>Query Optimization</li>
+              <li>Indexing</li>
+              <li>Normalization</li>
+            </ul>
+          </div>
 
-    <hr />
+          <div class="skill-group">
+            <h4>Tools &amp; Cloud</h4>
+            <ul class="tag-list">
+              <li>Docker</li>
+              <li>Git / GitHub</li>
+              <li>Postman</li>
+              <li>Linux CLI</li>
+              <li>Jenkins</li>
+              <li>Azure App Service</li>
+              <li>Azure SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>Core Competencies</h4>
+            <ul class="tag-list">
+              <li>Data Structures</li>
+              <li>OOP</li>
+              <li>Software Testing</li>
+              <li>API Design</li>
+              <li>System Architecture</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══ EXPERIENCE ════════════════════════════════════════ -->
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jul 2025 – Sep 2025</span>
+              <span class="timeline-place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Developer Intern</h3>
+              <p class="company">White Services Technology Ltd.</p>
+              <ul>
+                <li>Developed and shipped backend modules and reusable API components in ASP.NET, improving page interaction speed by <strong>30%</strong> through optimized controller logic and asynchronous processing.</li>
+                <li>Designed and deployed a 12-table PostgreSQL schema with proper indexing and normalization, reducing query latency by <strong>22%</strong>.</li>
+                <li>Built and integrated FastAPI-based REST endpoints, enabling secure cross-service communication and reducing integration efforts for the frontend by <strong>40%</strong>.</li>
+                <li>Collaborated with product and QA teams to deliver core features <strong>two weeks ahead of schedule</strong>, contributing to an on-time release.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Feb 2024 – Apr 2024</span>
+              <span class="timeline-place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Arduino &amp; Robotics Instructor</h3>
+              <p class="company">Motijheel Model High School</p>
+              <ul>
+                <li>Taught 50+ students robotics fundamentals, sensor integration, and microcontroller programming.</li>
+                <li>Supervised 8+ hardware projects, improving student project completion rate and understanding of embedded systems.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Oct 2020 – Jan 2021</span>
+              <span class="timeline-place">Dhaka, Bangladesh</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Graphic Designer <span class="part-time">(Part-Time)</span></h3>
+              <p class="company">Gronthik Publication</p>
+              <ul>
+                <li>Designed 10+ book covers and 35+ production graphics used in published print materials.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ═══ PROJECTS ══════════════════════════════════════════ -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>EduBuddy</h3>
+              <span class="project-badge">AI / Web</span>
+            </div>
+            <p class="project-subtitle">AI-Enhanced Learning Platform</p>
+            <ul class="tag-list">
+              <li>ASP.NET</li><li>FastAPI</li><li>PostgreSQL</li>
+            </ul>
+            <ul class="project-points">
+              <li>Engineered backend architecture with 8+ REST APIs for content generation, authentication, and progress tracking.</li>
+              <li>Improved API response times by <strong>28%</strong> via route restructuring and query optimization.</li>
+            </ul>
+          </article>
+
+          <article class="project-card highlight">
+            <div class="project-header">
+              <h3>6-DoF Robotic Arm</h3>
+              <span class="project-badge award">🥈 2nd Place</span>
+            </div>
+            <p class="project-subtitle">NDUB Engineering Showcase</p>
+            <ul class="tag-list">
+              <li>Arduino</li><li>Servo Drivers</li>
+            </ul>
+            <ul class="project-points">
+              <li>Built a fully articulated robotic arm achieving &lt;3° motion error.</li>
+            </ul>
+          </article>
+
+          <article class="project-card highlight">
+            <div class="project-header">
+              <h3>IoT Health Monitor</h3>
+              <span class="project-badge award">🥇 1st Place</span>
+            </div>
+            <p class="project-subtitle">IoT-Based Health Monitoring System</p>
+            <ul class="tag-list">
+              <li>ESP32</li><li>Sensors</li><li>Cloud</li>
+            </ul>
+            <ul class="project-points">
+              <li>Built cloud-connected vitals tracker measuring temperature, pulse, and movement.</li>
+              <li>Earned <strong>1st Place</strong> among 25+ competing teams.</li>
+            </ul>
+          </article>
+
+          <article class="project-card highlight">
+            <div class="project-header">
+              <h3>ESP32-CAM Rover</h3>
+              <span class="project-badge award">🥉 3rd Place</span>
+            </div>
+            <p class="project-subtitle">Surveillance Rover</p>
+            <ul class="tag-list">
+              <li>ESP32-CAM</li><li>Python</li>
+            </ul>
+            <ul class="project-points">
+              <li>Implemented real-time 480p video streaming at 18 FPS with a custom Python dashboard for remote control.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>CLI-Based OS</h3>
+              <span class="project-badge">Systems</span>
+            </div>
+            <p class="project-subtitle">Command-Line OS Environment</p>
+            <ul class="tag-list">
+              <li>C#</li>
+            </ul>
+            <ul class="project-points">
+              <li>Created CLI-based OS environment supporting user commands, file navigation, and lightweight shell utilities.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>PDF Summarizer</h3>
+              <span class="project-badge">NLP / Tooling</span>
+            </div>
+            <p class="project-subtitle">Intelligent Document Summarizer</p>
+            <ul class="tag-list">
+              <li>Python</li>
+            </ul>
+            <ul class="project-points">
+              <li>Developed document summarizer using BFS/DFS-inspired parsing logic for keyword extraction on long PDFs.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ═══ EDUCATION ═════════════════════════════════════════ -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <article class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>Bachelor of Science in Computer Science &amp; Engineering</h3>
+            <p class="edu-school">Notre Dame University Bangladesh</p>
+            <p class="edu-meta">
+              <span>2021 – 2026</span>
+              <span class="edu-cgpa">CGPA: 3.58 / 4.00</span>
+            </p>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- ═══ ACHIEVEMENTS ══════════════════════════════════════ -->
+      <section id="achievements">
+        <h2>Achievements</h2>
+
+        <ul class="achievements-list">
+          <li>
+            <span class="medal gold">🥇</span>
+            <div>
+              <strong>1st Place</strong>
+              <p>IoT Health Monitoring System — NDUB Competition</p>
+            </div>
+          </li>
+          <li>
+            <span class="medal silver">🥈</span>
+            <div>
+              <strong>2nd Place</strong>
+              <p>6-DoF Robotic Arm — NDUB Engineering Showcase</p>
+            </div>
+          </li>
+          <li>
+            <span class="medal bronze">🥉</span>
+            <div>
+              <strong>3rd Place</strong>
+              <p>ESP32-CAM Surveillance Rover — NDUB Hardware Competition</p>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+    </main>
 
     <footer>
-      <small>© Mehedi Hossen Fahim. All Rights Reserved.</small>
+      <p>
+        <a href="https://mehdihossenfahim.github.io/portfolio" target="_blank" rel="noopener">Portfolio</a>
+        <span>·</span>
+        <a href="https://github.com/MehdiHossenFahim" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/mehedihossen-fahim" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <small>© 2025 Mehedi Hossen Fahim. All Rights Reserved.</small>
     </footer>
+
   </body>
 </html>
