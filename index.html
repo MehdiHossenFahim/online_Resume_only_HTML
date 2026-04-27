@@ -1,0 +1,179 @@
+<!-- Project Specifications
+Create an HTML file named index.html.
+
+Use the <!DOCTYPE html> declaration at the beginning of the file to indicate that it's an HTML document.
+
+Create a head section that includes a title element with the text "My Resume".
+
+Inside the body section, write HTML code to create an online resume covering the following aspects:
+
+Summary or objective statement
+
+Education (list degrees, schools, and dates)
+
+Work experience (list job titles, employers, dates, and responsibilities)
+
+Skills (list relevant skills or areas of expertise)
+
+Awards, certifications, or other achievements (list any relevant awards, certifications, or other accomplishments)
+
+Use appropriate HTML tags to format the content of each section, such as h1 for section headings and ul or ol for lists.
+
+Use HTML tags to add a profile photo of yourself.
+
+Use relevant anchor tags to create a multi-page website, listing other aspects of your resume such as Hobbies and Contact details.
+
+Add a footer element with your name and any copyright information or other disclaimers. (Hint: use the MDN docs for things you don't know how to do: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
+
+Save the index.html file and open it in a web browser to ensure that it displays correctly.
+
+Add your website to your GitHub to start building your portfolio.
+
+Publish your website using GitHub pages and share it here (in the Q&A) with other students.
+
+Comment and make suggestions to other students' projects. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehedi Hossen Fahim - Resume</title>
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+  </head>
+
+  <body>
+    <img
+      src="./assets/images/FahimPP.jpg"
+      alt="headshot of mehedi hossen fahim"
+      width="150"
+    />
+
+    <h1>Mehedi Hossen Fahim</h1>
+
+    <section id="contact">
+      <address>
+        <p>
+          <img src="assets/images/telephone-symbol-button.png" width="20" />
+          +880 1567892416
+        </p>
+        <p>
+          <a href="https://github.com/MehdiHossenFahim">
+            <img src="assets/images/github.png" width="20" />
+            GitHub-mehdihossenfahim
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/mehedi-hossen-fahim/">
+            <img src="assets/images/linkedin.png" width="20" />
+            LinkedIn-mehedihossenfahim
+          </a>
+        </p>
+      </address>
+    </section>
+    <nav>
+      <a href="#about">About</a> | <a href="#skills">Skills</a> |
+      <a href="#experience">Experience</a> | <a href="#projects">Projects</a> |
+      <a href="#education">Education</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <hr />
+    <section id="about">
+      <h2>Professional Summary</h2>
+      <p>
+        Results-driven Software Developer with demonstrated success building
+        reliable backend systems, optimizing database performance, and
+        delivering production-ready features across ASP.NET, FastAPI, and
+        PostgreSQL. Recognized for reducing system latency, improving
+        application responsiveness, and contributing to scalable architectures.
+        Strong foundation in algorithms, API development, and clean,
+        maintainable code with proven impact across 10+ deployed software and
+        IoT solutions.
+      </p>
+    </section>
+
+    <hr />
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>
+          Programming Languages:
+          <ul>
+            <li>
+              <label for="python">Python</label>
+              <progress max="100" value="95" id="python">95%</progress
+              ><span> 95%</span>
+            </li>
+            <li>
+              <label for="C#">C#</label>
+              <progress max="100" value="90" id="C#">90%</progress
+              ><span> 90%</span>
+            </li>
+            <li>
+              <label for="java">Java</label>
+              <progress max="100" value="95" id="java">95%</progress
+              ><span> 95%</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Database:
+          <ul>
+            <li>
+              <label for="postgre">PostGRE SQL</label>
+              <progress max="100" value="90" id="postgre">90%</progress
+              ><span> 90%</span>
+            </li>
+            <li>
+              <label for="mysql">MySQL</label>
+              <progress max="100" value="90" id="mysql">90%</progress
+              ><span> 90%</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>White Services Technology Ltd.</h3>
+          <ul>
+            <li>Software Developer Intern</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>EDUBUDDY AI-ENHANCED LEARNING PLATFORM</li>
+        <li>IOT-BASED HEALTH MONITORING SYSTEM</li>
+        <li>PDF SUMMARIZER</li>
+        <li>6-DOF ROBOTIC ARM</li>
+      </ul>
+    </section>
+
+    <hr />
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          BSc in Computer Science and Engineering – Notre Dame University
+          Bangladesh (2026)
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <footer>
+      <small>© Mehedi Hossen Fahim. All Rights Reserved.</small>
+    </footer>
+  </body>
+</html>
